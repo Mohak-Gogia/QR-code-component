@@ -10,15 +10,16 @@ body {
     font-size: 15px;
 }
 
-.container {
+.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    flex-direction: column;
 }
 
 .qr-box {
+    align-self: auto;
     height: 450px;
     width: 300px;
     background-color: hsl(0, 0%, 100%);
@@ -50,4 +51,18 @@ img {
     font-weight: 400;
     text-align: center;
     padding: 1rem;
+}
+
+
+.attribution {
+    font-size: 11px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
